@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/activity1"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/background">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <!-- Layout Content0 -->
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_weight="2">
+
+      <TextView
+        android:id="@+id/example0_tv01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scrollbars="vertical"
+        android:text="Day of the week"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#3d95c9"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/example0_tv01"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:weightSum="7">
+
+          <com.example.elasticview.util.ElasticButton
+            android:id="@+id/daybtn0"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Sun"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Mon"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Tue"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Wed"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Thu"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn5"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Fri"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+
+          <com.example.elasticview.util.ElasticCheckButton
+            android:id="@+id/daybtn6"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/background800"
+            android:onClick="checkButtons"
+            android:text="Sat"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:checkButton_duration="400"
+            app:checkButton_scale="0.9" />
+        </LinearLayout>
+      </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:layout_weight="3"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+          android:id="@+id/example0_tv02"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="23dp"
+          android:layout_marginRight="23dp"
+          android:scrollbars="vertical"
+          android:text="Alarm time between"
+          android:textAppearance="@style/TextAppearance.AppCompat.Small"
+          android:textColor="#3d95c9"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+        <com.example.elasticview.util.ElasticImageView
+          android:id="@+id/example0_ibtn_q_timeset01"
+          android:layout_width="23dp"
+          android:layout_height="23dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:onClick="imageViews"
+          android:scaleType="fitXY"
+          android:src="@drawable/ic_remove"
+          android:tint="#3d95c9"
+          app:imageView_scale="0.7" />
+
+      </RelativeLayout>
+
+      <com.example.elasticview.util.ElasticLayout
+        android:id="@+id/layout_starttime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/background800"
+        android:onClick="layout"
+        app:layout_cornerRadius="4dp"
+        app:layout_scale="0.9">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+            android:id="@+id/example0_content1_tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Start time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/example0_content1_tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="8:00 AM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp" />
+        </RelativeLayout>
+      </com.example.elasticview.util.ElasticLayout>
+
+      <com.example.elasticview.util.ElasticLayout
+        android:id="@+id/layout_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/makealram_tv02"
+        android:layout_marginTop="15dp"
+        android:background="@color/background800"
+        android:onClick="layout"
+        app:layout_cornerRadius="4dp"
+        app:layout_scale="0.9">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+            android:id="@+id/makealram_content1_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="End time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/makealram_content1_tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="9:00 PM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp" />
+        </RelativeLayout>
+      </com.example.elasticview.util.ElasticLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_weight="1.5">
+
+      <TextView
+        android:id="@+id/example0_tv03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scrollbars="vertical"
+        android:text="Alarm time interval"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#3d95c9"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+      <com.example.elasticview.util.ElasticImageView
+        android:id="@+id/example0_ibtn_q_timeset02"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="imageViews"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_remove"
+        android:tint="#3d95c9"
+        app:imageView_scale="0.7" />
+
+      <com.example.elasticview.util.ElasticLayout
+        android:id="@+id/layout_timeinterval"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/example0_ibtn_q_timeset02"
+        android:layout_marginTop="15dp"
+        android:background="@color/background800"
+        android:onClick="layout"
+        app:layout_cornerRadius="4dp"
+        app:layout_scale="0.9">
+
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+            android:id="@+id/example0_content2_tv0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Time interval"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+          <TextView
+            android:id="@+id/example0_content2_tv_timeinterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="2 hours"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/white_87"
+            android:textSize="15sp" />
+        </RelativeLayout>
+      </com.example.elasticview.util.ElasticLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginBottom="30dp"
+      android:layout_weight="1">
+
+      <com.example.elasticview.util.ElasticButton
+        android:id="@+id/elasticbtn_addalarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:background="@color/colorAccent"
+        android:onClick="addNewAlarm"
+        android:text="Add a new alarm"
+        android:textColor="@android:color/white"
+        app:button_cornerRadius="2dp"
+        app:button_duration="250"
+        app:button_scale="0.87" />
+    </RelativeLayout>
+  </LinearLayout>
+</RelativeLayout>

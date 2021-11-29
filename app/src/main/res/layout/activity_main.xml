@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.2">
+
+    <TextView
+        android:id="@+id/main_tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="ElasticView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
+
+    <com.example.elasticview.util.ElasticButton
+    android:id="@+id/elasticbtn0"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="20dp"
+    android:layout_weight="1"
+    android:background="@color/background800"
+    android:onClick="buttons"
+    android:text="Example Activity0"
+    android:textColor="@android:color/white"
+    android:textSize="17sp"
+    app:button_cornerRadius="4dp"
+    app:button_duration="250"
+    app:button_scale="0.87" />
+
+    <com.example.elasticview.util.ElasticButton
+    android:id="@+id/elasticbtn1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_weight="1"
+    android:background="@color/background800"
+    android:onClick="buttons"
+    android:text="Example Activity1"
+    android:textColor="@android:color/white"
+    android:textSize="17sp"
+    app:button_cornerRadius="4dp"
+    app:button_duration="250"
+    app:button_scale="0.87" />
+
+    <com.example.elasticview.util.ElasticButton
+    android:id="@+id/elasticbtn2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_margin="20dp"
+    android:layout_weight="1"
+    android:background="@color/background800"
+    android:onClick="buttons"
+    android:text="Example Activity2"
+    android:textColor="@android:color/white"
+    android:textSize="17sp"
+    app:button_cornerRadius="4dp"
+    app:button_duration="250"
+    app:button_scale="0.87" />
+</LinearLayout>
